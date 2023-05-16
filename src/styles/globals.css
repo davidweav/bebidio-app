@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
-html {
-  background-image: linear-gradient(to right, purple, yellow);
+
+
+.bottom {
+  margin-top: 80vh;
+}
+.center {
+  background-color: rgba(52, 47, 47, 0.138);
+  text-align: center;
+  height: 100vh;
+  margin: 0px 100px;
+  padding: 50px;
 }
