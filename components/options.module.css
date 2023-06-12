@@ -1,34 +1,5 @@
-.slidecontainer {
-    width: 100%; /* Width of the outside container */
-  }
-  
-  /* The slider itself */
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 80%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #493a3a; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #ff0101; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 
   .liquor-selection-bar input[type="radio"] {
     opacity: 0;
@@ -38,40 +9,38 @@
 
   .liquor-selection-bar label {
     display: inline-block;
-    background-color: #ddd;
     padding: 10px 20px;
-    font-family: sans-serif, Arial;
-    font-size: 20px;;
-    border: 2px solid #444;
-    border-radius: 4px;
-}
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 20px;
+    border-right: 2px solid #1F2051;
+    transition: all 0.4s;
+  }
 
- .liquor-selection-bar input[id="radioVodka"]:checked + label {
+  .liquor-selection-bar label:hover {
+    
+    padding: 10px 30px;
+  }
+  .liquor-selection-bar label:last-child {
+    border: none;
+  }
+
+
+ .liquor-selection-bar input[id="radioVodka"]:hover + label, .liquor-selection-bar input[id="radioVodka"]:checked + label{
   background-color: lightblue;
-  border-color: blue;
 }
-.liquor-selection-bar input[id="radioGin"]:checked + label {
+.liquor-selection-bar input[id="radioGin"]:hover + label, .liquor-selection-bar input[id="radioGin"]:checked + label {
   background-color: lightgreen;
-  border-color: green;
 }
-.liquor-selection-bar input[id="radioRum"]:checked + label {
+.liquor-selection-bar input[id="radioRum"]:hover + label, .liquor-selection-bar input[id="radioRum"]:checked + label {
   background-color: lightyellow;
-  border-color: yellow;
 }
-.liquor-selection-bar input[id="radioRum"]:checked + label {
-  background-color: rgb(255, 219, 152);
-  border-color: rgb(255, 166, 0);
-}
-.liquor-selection-bar input[id="radioWhiskey"]:checked + label {
+.liquor-selection-bar input[id="radioWhiskey"]:hover + label, .liquor-selection-bar input[id="radioWhiskey"]:checked + label{
   background-color: rgb(164, 102, 68);
-  border-color: rgb(144, 50, 0);
 }
-.liquor-selection-bar input[id="radioTequila"]:checked + label {
+.liquor-selection-bar input[id="radioTequila"]:hover + label, .liquor-selection-bar input[id="radioTequila"]:checked + label {
   background-color: rgb(255, 137, 149);
-  border-color: rgb(255, 0, 25);
 }
-.liquor-selection-bar input[id="radioNA"]:checked + label {
+.liquor-selection-bar input[id="radioNA"]:hover + label, .liquor-selection-bar input[id="radioNA"]:checked + label {
   background-color: rgb(255, 255, 139);
-  border-color: rgb(255, 255, 0);
 }
   

@@ -14,54 +14,41 @@ export default function HomePage() {
   
   return (
     
-      <div className="styles.bubbles title-container" >
-        <Head>
-          <style>{`
-            body {
-              padding: 0;
-              margin: 0;
-              min-height: 100vh;
-              background: linear-gradient(to right, purple, yellow);
-              background-size: 400%;
-              background-position: 0%;
-            }
-          `}</style>
-        </Head>
-      {/* Animated title container */}
-       <div className={styles.ten}>
-        <h3 className={styles.bounce}>
-          <span>B</span>
-          <span>e</span>
-          <span>b</span>
-          <span>i</span>
-          <span>d</span>
-          <span>i</span>
-          <span>o</span>
-        </h3>
-      </div>
+      <div class="title-page">
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../options">Drink Maker</a></li>
+            <li><a href="#">Drink Collection</a></li>
+          </ul>
+        </nav>
+        <header class="title-box {styles.bubbles}">
+          {/* Animated title container */}
+          <div className={styles.ten}>
+            <h3 className={styles.bounce}>
+              <span>B</span>
+              <span>e</span>
+              <span>b</span>
+              <span>i</span>
+              <span>d</span>
+              <span>i</span>
+              <span>o</span>
+            </h3>
+            <p>Designed by David Weaver</p>
+          
+          </div>
 
-      {/* Each individual bubble is a container */}
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
-      <div className={styles.bubble}></div>
 
-      
-      <div className="center">
+      </header>
+      <main class="title-page-content">
         <h2>An App Designed to Expand Your Taste</h2>
-        <p>Designed by David Weaver</p>
-        <h2 className="bottom">
-          <Link href="../options">
-            Get Started!
-            </Link>
-        </h2>
-      </div>
+        <h2>Discover Your Next Favorite Cocktail</h2>
+        <Link class="start-button" href="../options">Get Started</Link>
+      </main>
+      <footer class="title-page-footer">
+        <h2>contact </h2>
+      </footer>
     </div>
   ) 
 }
