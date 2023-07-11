@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-
+  /* Liquor Selection Bar 
+  ------------------------------------------------*/
   .liquor-selection-bar input[type="radio"] {
     opacity: 0;
     position: fixed;
@@ -43,4 +44,80 @@
 .liquor-selection-bar input[id="radioNA"]:hover + label, .liquor-selection-bar input[id="radioNA"]:checked + label {
   background-color: rgb(255, 255, 139);
 }
-  
+
+/* Flavor Selection Bar 
+  ------------------------------------------------*/
+  .flavor-selection-bar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .flavor-selection-bar label {
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 25px;
+    margin: 0 20px;
+    border-radius: 50%;
+    border: 2px solid #C6DDF0;
+    transition: all 0.4s;
+
+  }
+  .flavor-selection-bar label:hover, .flavor-selection-bar label:checked{
+    
+    padding: 40px;
+  }
+  .flavor-selection-bar input[id="flavor-sweet"]:hover + label, .flavor-selection-bar input[id="flavor-sweet"]:checked + label{
+    background-color: rgb(255, 137, 149);
+  }
+  .flavor-selection-bar input[id="flavor-salty"]:hover + label, .flavor-selection-bar input[id="flavor-salty"]:checked + label{
+    background-color: rgb(96, 175, 82);
+  }
+  .flavor-selection-bar input[id="flavor-bitter"]:hover + label, .flavor-selection-bar input[id="flavor-bitter"]:checked + label{
+    background-color: rgb(201, 141, 197);
+  }
+
+  /* Color Selection Bar 
+  ------------------------------------------------*/
+
+  .color-selection-bar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .color-selection-bar label {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 15px;
+    margin: 0 10px;
+
+    border-bottom: 2px solid #1F2051;
+    transition: all 0.4s;
+
+  }
+
+  .color-selection-bar input[id="color-brown"]:hover + label, .color-selection-bar input[id="color-brown"]:checked + label{
+    background-color: rgb(140, 106, 70);
+  }
+  .color-selection-bar input[id="color-red"]:hover + label, .color-selection-bar input[id="color-red"]:checked + label{
+    background-color: rgb(255, 80, 80);
+  }
+  .color-selection-bar input[id="color-orange"]:hover + label, .color-selection-bar input[id="color-orange"]:checked + label{
+    background-color: rgb(255, 156, 80);
+  }
+  .color-selection-bar input[id="color-yellow"]:hover + label, .color-selection-bar input[id="color-yellow"]:checked + label{
+    background-color: rgb(255, 243, 80);
+  }
+  .color-selection-bar input[id="color-green"]:hover + label, .color-selection-bar input[id="color-green"]:checked + label{
+    background-color: rgb(106, 255, 80);
+  }
+  .color-selection-bar input[id="color-blue"]:hover + label, .color-selection-bar input[id="color-blue"]:checked + label{
+    background-color: rgb(80, 109, 255);
+  }
+  .color-selection-bar input[id="color-purple"]:hover + label, .color-selection-bar input[id="color-purple"]:checked + label{
+    background-color: rgb(182, 80, 255);
+  }
+

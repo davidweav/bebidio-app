@@ -3,13 +3,23 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import React from 'react';
 import Head from 'next/head';
-
+import { db } from '../firebase/config';
+import { collection, addDoc, getDocs } from "firebase/firestore"; 
 // Title Screen
 export default function HomePage() {
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
+  useEffect(() => {
+
+    async function fetchData() {
+        const querySnapshot =  await getDocs(collection(db, "cocktails"));
+        querySnapshot.forEach((doc) => {  
+          console.log(doc.data());
+        });
+    }
+
+    fetchData();
+  },[]);
+  
   
   
   return (
@@ -23,7 +33,7 @@ export default function HomePage() {
             <li><a href="#">Drink Collection</a></li>
           </ul>
         </nav>
-        <header class="title-box {styles.bubbles}">
+        <header class="title-box">
           {/* Animated title container */}
           <div className={styles.ten}>
             <h3 className={styles.bounce}>
@@ -36,13 +46,25 @@ export default function HomePage() {
               <span>o</span>
             </h3>
             <p>Designed by David Weaver</p>
-          
+
+          </div>
+          <div class={styles.bubbles}>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div>
+            <div class={styles.bubble}></div> 
           </div>
 
 
-      </header>
+        </header>
       <main class="title-page-content">
-        <h2>An App Designed to Expand Your Taste</h2>
+        <h2>An App Designed to Expand Your <em>Taste</em></h2>
         <h2>Discover Your Next Favorite Cocktail</h2>
         <Link class="start-button" href="../options">Get Started</Link>
       </main>
@@ -51,14 +73,4 @@ export default function HomePage() {
       </footer>
     </div>
   ) 
-}
-
-export function handleScroll() {
-  
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;  
-  var scrolled = (winScroll / height) * 100;
-  
-
-
 }

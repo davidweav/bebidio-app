@@ -15,13 +15,13 @@ export default function About() {
             </nav>
             <main class="about-page"> 
                 <h1> About</h1>
-
+no
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Vivamus quis ultricies dui. Praesent a tempus odio, at pellentesque sem. 
                     Aenean varius orci sit amet mi semper dignissim. Sed eu malesuada magna.
                     Nullam dapibus risus lorem, a consequat nisl gravida ac. Ut ut condimentum mi. 
                     Nam at ipsum elementum mi vestibulum ultricies. Nulla urna velit, porta a tincidunt eget, 
-                    tristique at lectus. Etiam dapibus justo vitae lacus tincidunt molestie. 
+                    tris ique at lectus. Etiam dapibus justo vitae lacus tincidunt molestie. 
                     Suspendisse id justo metus. Aliquam vel turpis pharetra, euismod arcu vel, 
                     cursus nisi. Duis vel massa posuere, placerat massa et, ultrices arcu. 
                     Suspendisse potenti. Maecenas condimentum ante et finibus egestas. Nullam vitae 
