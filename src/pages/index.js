@@ -3,24 +3,9 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import React from 'react';
 import Head from 'next/head';
-import { db } from '../firebase/config';
-import { collection, addDoc, getDocs } from "firebase/firestore"; 
+
 // Title Screen
 export default function HomePage() {
-
-  useEffect(() => {
-
-    async function fetchData() {
-        const querySnapshot =  await getDocs(collection(db, "cocktails"));
-        querySnapshot.forEach((doc) => {  
-          console.log(doc.data());
-        });
-    }
-
-    fetchData();
-  },[]);
-  
-  
   
   return (
     
