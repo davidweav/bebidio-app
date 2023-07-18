@@ -4,7 +4,6 @@ export default function LiquorSelector(props) {
     
     return (
         <div id = {props.id} className={styles["liquor-selection-bar"]} >
-            <p>Choose One Option Below</p>
 
             <input type="radio" id="radioVodka" name="radioLiquor" value="vodka" />
             <label htmlFor="radioVodka" >Vodka</label>
@@ -20,9 +19,6 @@ export default function LiquorSelector(props) {
 
             <input type="radio" id="radioTequila" name="radioLiquor" value="tequila" />
             <label htmlFor="radioTequila" >Tequila</label>
-
-            <input type="radio" id="radioNA" name="radioLiquor" value="na" />
-            <label htmlFor="radioNA" >Non-Alcoholic</label>
         </div>
     );
     
