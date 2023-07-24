@@ -40,17 +40,20 @@ export default function HomePage() {
             <div class={styles.bubble}></div> 
           </div>
           <div class="title-content">
-            <div class="text">
+            
+            <div class="text-box">
+              <div class="text">
               <h2>An App Designed to Expand Your <em>Palette</em></h2>
               <h2>Discover Your Next Favorite Cocktail</h2>
-              
-            </div>
-            <i class="fa fa-glass"></i>
+              </div>
             <Link class="start-button" href="../options">Get Started</Link>
-          </div>
-            <div class="footer-box">
-              <h2>Designed and Built by David Weaver</h2>
             </div>
+          
+          <div class="footer-box">
+              <h3>Designed and Built by David Weaver</h3>
+            </div>
+            </div>
+            
         </main>
 
     </div>

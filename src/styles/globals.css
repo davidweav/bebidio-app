@@ -31,9 +31,7 @@ body {
   padding: 0;
   margin: 0;
 }
-i {
-  font-size: 20px;
-}
+
 
 /* Title Page
 ---------------------------------------*/
@@ -42,36 +40,35 @@ i {
   margin: 0;
   width: 100%;
   color: #C6DDF0;
-  
+  background-color: #C6DDF0;
 }
 
 .title-box {
-  background-color: #C6DDF0;
-  margin: 0;
-  color: #000000;
-  height: 100vh;
+
+  height: 100vh
 
 
 }
 
 
 .title-box .title-content {
-  padding: 100px;
+  background-color: #C6DDF0;
+  padding: 5vw 10vw 0 10vw;
   padding-bottom: 0;
-  display: flex;
+
   color: #000000;
 }
 
 em {
   font-style: normal;
   color: rgb(255, 56, 56);
-  font-size: 60px;
+  font-size: 8vw;
   padding-bottom: -10px;
   border-bottom: #ff0f0f solid 3px;
 
 }
 .title-content h2 {
-  font-size: 50px;
+  font-size: 40px;
   width: 80%;
 }
 
@@ -80,12 +77,17 @@ em {
   color:#000000;
 }
 
+.title-box .text-box {
+  display: flex;
+}
 .title-box .footer-box {
   background-color:#fdff6d;
   width: 30%;
   margin: auto;
   text-align: center;
+  font-size: 3vw;
   padding: 5px 10px;
+  margin-top: 15vh;
   border:#000000 solid 3px;
   box-shadow: 3px 3px #000000;
 }
@@ -94,7 +96,6 @@ em {
 .start-button {
   align-self: flex-start;
   align-self: center;
-  display: inline-block;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -102,9 +103,19 @@ em {
   border: #000000 solid 3px;
   box-shadow: 3px 3px #000000;
   background-color: #FFC857;
-  transition: all 0.4s;
-  font-size: 30px;
+  font-size: 40px;
   transform: rotate(-5deg);
+  
+}
+
+@media screen and (max-width: 800px){
+  .start-button {
+    font-size: 20px;
+  }
+
+  .title-content h2 {
+    font-size: 20px;
+  }
   
 }
 
@@ -116,12 +127,13 @@ em {
 }
 
 .drink-maker-content {
-  padding: 100px;
-  padding-bottom: 10px;
+  padding: 10vw;
+  padding-bottom: 110px;;
+  
 }
 .drink-maker-page h1 {
-  font-size: 100px;
-  margin-top: -35px;
+  font-size: 10vw;
+  margin-top: -3vw;
   margin-bottom: -10px;
  
 }
@@ -130,7 +142,7 @@ em {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 50px;
+  font-size: 5vw;
   padding: 10px;
   box-shadow: #000000 3px 3px;
   padding-bottom: 5px;
@@ -156,9 +168,9 @@ em {
 .menu-submit {
   font-size: 15px;
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 4vw;
 	cursor: pointer;
-  padding: 10px;
+  padding: 10px;;
   border-radius: 10px;
   border:rgb(2, 1, 1) solid 3px;
   background-color: #EE6352;
@@ -178,7 +190,7 @@ em {
 ---------------------------------------*/
 .drink-display {
   
-  padding: 80px;
+  padding: 8vw;
   color: #f3f3f3;
   height: 100%;
 
@@ -188,6 +200,7 @@ em {
 .drink-display h1 {
   font-size: 100px;
   margin-top: 0px;
+  margin-bottom: 20vh;
   border:#000000 solid 3px;
   text-align: center;
   padding: 10px 10px 5px 10px;
@@ -197,30 +210,42 @@ em {
 
 .drink-display ul {
   padding-left: 0px;
-  font-size: 30px;
+  font-size: 40px;
   
   width: 10em;
-  margin-bottom: 5vh;
+  margin-bottom: 20vh;
 
 
 }
 
 .drink-display li {
-  padding: 10px;
+  padding: 1vw;
   font-family: 'Inria Sans', sans-serif;
 
   list-style-type: none;
   
-  
 } 
 
+@media screen and (max-width: 800px) {
+  .drink-display h1 {
+    font-size: 50px;
+  }
+  .drink-display ul {
+    font-size: 20px;
+  }
+  .drink-display li {
+    padding: 0.5vw;
+  }
+  .drink-display button {
+    font-size: 2vw;
+  }
+}
 
 .drink-display button {
-  font-size: 15px;
-  margin-bottom: 10px;
-  font-size: 30px;
+  margin-bottom: 10vh;
+  font-size: 4vw;
 	cursor: pointer;
-  padding: 10px;
+  padding: 1vw;
   border-radius: 10px;
   border:rgb(2, 1, 1) solid 3px;
   background-color: #FFFFFF;
@@ -239,37 +264,32 @@ em {
 
 .about-page {
   margin: 0;
-
   background-color: #b68bff;
-
 }
 
-
 .about-content {
-  height: 100vh;
-  
-  
+
+  padding-bottom: 70vh;
+
 }
 
 .about-content h1 {
-  padding: 0 50px;
-  
-  
+  padding: 0 5vw;
 }
 .about-content h2 {
   background-color: aliceblue;
   margin: 0;
-  padding: 10px;
+  padding: 1vw;
   border-bottom:#000000 solid 4px;
   text-align: center;
 }
 .notecard {
   background-color: #fdff6d;
   display: inline-block;
-  width: 40%;
+  width: 40vw;
   box-shadow: 3px 3px #000000;
   border:rgb(2, 1, 1) solid 3px;
-  margin: 0 40px;
+  margin: 0 4vw;
  
 
 }
@@ -283,7 +303,7 @@ em {
 }
 
 .about-page h1 {
-  font-size: 75px;
+  font-size: 70px;
   
 }
 
@@ -293,14 +313,15 @@ em {
   position: relative;
   z-index: 3;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
+  max-width: 100%;
 }
 .nav-box h1{
   background-color: rgb(255, 95, 95);
   margin: 0;
   color: rgb(2, 1, 1);
-  margin-left: 80px;
-  font-size: 40px;
+  margin-left: 3vw;
+  font-size: 7vw;
   padding: 20px;
   padding-top: 30px;
   display: inline-block;
@@ -315,8 +336,7 @@ nav ul {
   margin-top: 20px;
   padding: 0;
 
-  font-size: 25px;
- 
+  font-size: 3vw;
 }
 
 nav a { 
@@ -335,7 +355,7 @@ nav a:hover{
 
 }
 nav li {
-  padding: 0 20px;
+  
   display: inline;
   margin: 0;
   

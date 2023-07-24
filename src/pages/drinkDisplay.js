@@ -80,18 +80,7 @@ export default function drinkDisplay() {
                         </ul>
                     </nav>
                 </div>
-                <div class={styles.bubbles}>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div>
-                        <div class={styles.bubble}></div> 
-                    </div>
+               
                 <main style={drinkData.color != "yellow" ? {background: `linear-gradient(${drinkData.color},80%,${accentColor})`} : {background: `linear-gradient(${drinkData.color},80%,${accentColor})`, color: "black"}} class="drink-display">
                     <h1>{drinkData.cocktail}</h1>
                     
