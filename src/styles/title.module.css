@@ -1,13 +1,14 @@
 
 
   .bubbles{
-    position:absolute;
+    position: absolute;
     width:100%;
     height:100%;
     z-index:0;
     overflow:hidden;
     top:0;
     left:0;
+    
 
   }
   .bubble{
@@ -98,7 +99,7 @@
       transform:translate(100px);
     }
     100%{
-      bottom:1080px;
+      bottom:100vh;
       transform:translateX(-200px);
     }
   }
