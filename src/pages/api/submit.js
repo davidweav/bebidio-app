@@ -3,7 +3,7 @@
 
 export default function handler(req, res) {
 
-  const liquor = req.body.radioLiquor;
+  const liquor = req.body.liquor;
   const flavor = req.body.flavor;
   const color = req.body.color;
 
