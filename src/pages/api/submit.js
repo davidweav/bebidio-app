@@ -3,9 +3,15 @@
 
 export default function handler(req, res) {
 
-  const liquor = req.body.liquor;
-  const flavor = req.body.flavor;
-  const color = req.body.color;
+  if (req.method === 'POST') {
+    const liquor = req.body.radioLiquor;
+    const flavor = req.body.flavor;
+    const color = req.body.color;
+    console.log("test");
+    res.redirect(`../../drinkDisplay?liquor=${liquor}&flavor=${flavor}&color=${color}`);
+  } else {
 
-  res.redirect(`../../drinkDisplay?liquor=${liquor}&flavor=${flavor}&color=${color}`);
+    res.status(405).end();
+  }
+  
 }
