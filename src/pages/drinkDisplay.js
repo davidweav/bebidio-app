@@ -49,7 +49,6 @@ export default function drinkDisplay() {
             const data = await response.json();
             if(data != null) {
                 setDrinkData(data);
-                setFadeIn(true);
             }
             
         } catch (error) {
@@ -66,13 +65,13 @@ export default function drinkDisplay() {
     const currentUrl =  domain + router.asPath;
     if (drinkData != null && drinkData.ingredients != null) {
         return (
-            <div style={drinkData.color != "yellow" ? {background: `linear-gradient(${drinkData.color},80%,${accentColor})`} : {background: `linear-gradient(${drinkData.color},80%,${accentColor})`, color: "black"}} class="drink-display" class="drink-display-page">
+            <div style={drinkData.color != "yellow" ? {background: `linear-gradient(${drinkData.color},80%,${accentColor})`} : {background: `linear-gradient(${drinkData.color},80%,${accentColor})`, color: "black"}} className="drink-display" className="drink-display-page">
                 
-                <div class="nav-box">
-                    <div class="bebido-container">
-                        <h1 class="title">Bebidio</h1>
+                <div className="nav-box">
+                    <div className="bebido-container">
+                        <h1 className="title">Bebidio</h1>
                     </div>
-                    <nav class="nav-bar">
+                    <nav className="nav-bar">
                         <ul>
                             <li><Link href="./">Home</Link></li>
                             <li><Link href="../about">About</Link></li>
@@ -81,11 +80,8 @@ export default function drinkDisplay() {
                     </nav>
                 </div>
                
-                <main style={drinkData.color != "yellow" ? {background: `linear-gradient(${drinkData.color},80%,${accentColor})`} : {background: `linear-gradient(${drinkData.color},80%,${accentColor})`, color: "black"}} class="drink-display">
+                <main style={drinkData.color != "yellow" ? {background: `linear-gradient(${drinkData.color},80%,${accentColor})`} : {background: `linear-gradient(${drinkData.color},80%,${accentColor})`, color: "black"}} className="drink-display">
                     <h1>{drinkData.cocktail}</h1>
-                    
-
-                    
                     <ul> 
                         {drinkData.ingredients.map((item, index) => (
                             <li key={index}>{item}</li>
@@ -95,14 +91,15 @@ export default function drinkDisplay() {
                     <div className="drink-display-buttons">
                     <TwitterShareButton
                         url={currentUrl}
-                        title="Check out this drink I made on Bebidio!">
-
-                            <button>Tweet</button>
+                        title="Check out this drink I made on Bebidio!"
+                        className="button">
+                        
+                            Tweet
                             </TwitterShareButton>
                         
                    
 
-                    <Link href="../options"> <button>Make Another</button></Link>
+                    <Link href="../options"> <button className="button">Make Another</button></Link>
                     </div>
              </main>
             </div>

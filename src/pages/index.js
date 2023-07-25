@@ -8,15 +8,15 @@ export default function HomePage() {
   
   return (
     
-      <div class="title-page">
-        <main class="title-box">
-        <div class="nav-box">
-          <div class="bebido-container">
-            <h1 class="title">Bebidio</h1>
+      <div className="title-page">
+        <main className="title-box">
+        <div className="nav-box">
+          <div className="bebido-container">
+            <h1 className="title">Bebidio</h1>
             
           </div>
           
-        <nav class="nav-bar">
+        <nav className="nav-bar">
           <ul>
             <li><Link href="./">Home</Link></li>
             <li><Link href="../about">About</Link></li>
@@ -27,29 +27,29 @@ export default function HomePage() {
         
           {/* Animated title container */}
           
-          <div class={styles.bubbles}>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div> 
+          <div className={styles.bubbles}>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div> 
           </div>
-          <div class="title-content">
+          <div className="title-content">
             
-            <div class="text-box">
-              <div class="text">
+            <div className="text-box">
+              <div className="text">
               <h2>An App Designed to Expand Your <em>Palette</em></h2>
               <h2>Discover Your Next Favorite Cocktail</h2>
               </div>
-            <Link class="start-button" href="../options">Get Started</Link>
+            <Link className="start-button" href="../options">Get Started</Link>
             </div>
           
-          <div class="footer-box">
+          <div className="footer-box">
               <h3>Designed and Built by David Weaver</h3>
             </div>
             </div>

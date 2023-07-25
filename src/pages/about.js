@@ -7,14 +7,14 @@ export default function About() {
 
     return (
         <div>
-            <main class="about-page"> 
-            <div class="nav-box">
-          <div class="bebido-container">
-            <h1 class="title">Bebidio</h1>
+            <main className="about-page"> 
+            <div className="nav-box">
+          <div className="bebido-container">
+            <h1 className="title">Bebidio</h1>
             
           </div>
           
-        <nav class="nav-bar">
+        <nav className="nav-bar">
           <ul>
             <li><Link href="./">Home</Link></li>
             <li><Link href="../about">About</Link></li>
@@ -22,19 +22,19 @@ export default function About() {
           </ul>
         </nav>
         </div>
-        <div class={styles.bubbles}>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div>
-            <div class={styles.bubble}></div> 
+        <div className={styles.bubbles}>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div>
+            <div className={styles.bubble}></div> 
           </div>
-            <div class="about-content">
+            <div className="about-content">
             
                 <h1> About</h1>
 

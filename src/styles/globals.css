@@ -44,18 +44,13 @@ body {
 }
 
 .title-box {
-
   height: 100vh
-
-
 }
 
 
 .title-box .title-content {
   background-color: #C6DDF0;
   padding: 5vw 10vw 0 10vw;
-  padding-bottom: 0;
-
   color: #000000;
 }
 
@@ -68,7 +63,7 @@ em {
 
 }
 .title-content h2 {
-  font-size: 40px;
+  font-size: 4vw;
   width: 80%;
 }
 
@@ -82,12 +77,12 @@ em {
 }
 .title-box .footer-box {
   background-color:#fdff6d;
-  width: 30%;
+  width: 45%;
   margin: auto;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 5px 10px;
-  margin-top: 15vh;
+  margin-top: 4vh;
   border:#000000 solid 3px;
   box-shadow: 3px 3px #000000;
 }
@@ -113,10 +108,7 @@ em {
     font-size: 20px;
   }
 
-  .title-content h2 {
-    font-size: 20px;
-  }
-  
+
 }
 
 /* Drink Maker Page
@@ -241,14 +233,15 @@ em {
   }
 }
 
-.drink-display button {
+.drink-display .button {
   margin-bottom: 10vh;
   font-size: 4vw;
 	cursor: pointer;
-  padding: 1vw;
+  padding: 1vw !important;
   border-radius: 10px;
-  border:rgb(2, 1, 1) solid 3px;
-  background-color: #FFFFFF;
+  color:rgb(2, 1, 1) !important;
+  border:rgb(2, 1, 1) solid 3px !important;
+  background-color: #FFFFFF !important;
   position: relative;
   
 }
