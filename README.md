@@ -1,6 +1,6 @@
 
 
-Welcome to Bebidio, A website created to expand your pallete in cocktails! I created this website to explore web development, and the many technologies it has to offer.
+Welcome to Bebidio, A website created to expand your pallete in cocktails! I created this website using the Next.js framework to explore web development, and the many technologies it has to offer.
 
 Visit https://bebidio.vercel.app to see the website!
 
