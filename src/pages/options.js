@@ -52,7 +52,7 @@ export default function optionsPage() {
                 <p>Adjust The Options Below</p>
             
             <main>
-                <form method="post" action="/api/submit">
+                <form method="get" action="/drinkDisplay">
                     <div className="selection-menus">
                         <div className="menu liquor-menu">
                             <h2>Liquor</h2>
