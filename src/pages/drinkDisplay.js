@@ -37,7 +37,7 @@ export default function drinkDisplay() {
     const fetchData = async () => {
         try {
             
-            const baseUrl = './api/matchDrink' 
+            const baseUrl = '/api/matchDrink' 
             const queryParams = {
                 liq: liquor,
                 flav: flavor,
@@ -45,7 +45,7 @@ export default function drinkDisplay() {
             };
             
             const url = `${baseUrl}?${new URLSearchParams(queryParams)}`;
-            const response = await fetch(url);
+            const response = await fetch(url, {method: 'GET'});
             const data = await response.json();
             if(data != null) {
                 setDrinkData(data);
